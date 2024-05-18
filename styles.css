@@ -89,3 +89,20 @@ button {
 button:hover {
     background: #005f99;
 }
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #f4f4f4; /* Lighter text color */
+    padding: 5px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+    margin: 0;
+    padding: 0px;
+    font-size: 12px; /* Slightly larger font size */
+    color:#f4f4f4; /* Ensures the paragraph text is white */
+    text-shadow: 1px 1px 2px #000; /* Adds a subtle shadow for better readability */
+}

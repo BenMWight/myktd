@@ -1,45 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Kiwi Trade Discount</title>
-    <link rel="stylesheet" href="styles.css">
+    <!--<title>My Kiwi Trade Discount</title>-->
+    <script src="loadHead.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact_us_form.html">Contact Us</a></li>
-                <li><a href="portal_demo.html">Portal Demo</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-template"></div>
     <div id="redirectMessage" class="container">
         <h1>Portal Demo</h1>
         <p><a href="contact_us_form.html">Contact Us</a></p>
     </div>
-    <script>
-        // Check if the form has been submitted before
-        if ('true') {
-            setTimeout(function() {
-                var redirectDiv = document.getElementById('redirectMessage');
-                redirectDiv.innerHTML = '<h1>Redirecting</h1>';
-                setTimeout(function() {
-                    redirectDiv.innerHTML = '<h1>Redirecting.</h1>';
-                    setTimeout(function() {
-                        redirectDiv.innerHTML = '<h1>Redirecting..</h1>';
-                        setTimeout(function() {
-                            redirectDiv.innerHTML = '<h1>Redirecting...</h1>';
-                            setTimeout(function() {
-                                window.location.href = 'index.html';
-                            }, 1000); // Wait 0.5 seconds before redirecting
-                        }, 500); // Wait 0.5 seconds before changing to "Redirecting..."
-                    }, 500); // Wait 0.5 seconds before changing to "Redirecting.."
-                }, 500); // Wait 0.5 seconds before changing to "Redirecting."
-            }, 1000); // Wait 1 second before changing the message
-        }
-    </script>     
+    <div id="footer-template"></div>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+    <script src="redirecting_to_index.js"></script>
 </body>
 </html>
