@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Ben Wight</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact_us_form.html">Contact Me</a></li>
+                <li><a href="portal_demo.html">Portal Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Register your interest</h1>
+        <form id="contactForm" action="https://formspree.io/f/" method="POST">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script>
+        // Check if the form has been submitted before
+        if (sessionStorage.getItem('formSubmitted') === 'true') {
+            window.location.href = 'thankyou.html';
+        }
+    
+        // Set the flag in sessionStorage when the form is submitted
+        document.getElementById('contactForm').addEventListener('submit', function() {
+            sessionStorage.setItem('formSubmitted', 'true');
+        });
+    </script>
+</body>
+</html>
