@@ -115,3 +115,8 @@ footer p {
     color:#f4f4f4; /* Ensures the paragraph text is white */
     text-shadow: 1px 1px 2px #000; /* Adds a subtle shadow for better readability */
 }
+
+span#groups {
+    font-size: 10px;
+    padding: 2px;
+}

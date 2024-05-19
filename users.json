@@ -1,0 +1,25 @@
+{
+    "users": [
+      {
+        "username": "ben",
+        "password": "password",
+        "groups": ["admin","demo-consumer","demo-merchant"]
+      },
+      {
+        "username": "chris",
+        "password":  "password",
+        "groups": ["admin"]
+      },
+      {
+        "username": "demo-consumer",
+        "password": "password",
+        "groups": ["demo-consumer"]
+      },
+      {
+        "username": "demo-merchant",
+        "password": "password",
+        "groups": ["demo-merchant"]
+      }
+    ]
+  }
+  
