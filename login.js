@@ -4,7 +4,7 @@ function login(event) {
     const password = document.getElementById('login-password').value;
 
     // Simple authentication logic (replace with real authentication)
-    if (username === 'user' && password === 'password') {
+    if ((username === 'ben' && password === 'password') || (username === 'chris' && password === 'password')) {
         localStorage.setItem('username', username);
         window.location.href = 'index.html';
     } else {
