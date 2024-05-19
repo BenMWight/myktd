@@ -1,9 +1,15 @@
 <header>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact_us_form.html">Contact Us</a></li>
-            <li><a href="portal_demo.html">Portal Demo</a></li>
-        </ul>
+        <div><a href="index.html">Home</a></div>
+        <div><a href="contact_us_form.html">Contact Us</a></div>
+        <div><a href="portal_demo.html">Portal Demo</a></div>
+        <!-- Authentication buttons -->
+        <div id="auth-buttons" class="auth-buttons">
+            <button id="login-button" onclick="window.location.href='login.html'">Login</button>
+            <span id="user-info" style="display: none;">
+                <span id="username"></span>
+                <button onclick="logout()">Logout</button>
+            </span>
+        </div>
     </nav>
 </header>
