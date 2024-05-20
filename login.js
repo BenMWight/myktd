@@ -12,7 +12,6 @@ function login(event) {
             if (user) {
                 localStorage.setItem('username', username);
                 localStorage.setItem('groups', JSON.stringify(user.groups)); // Store user groups in localStorage
-                localStorage.setItem('state', 'none')
                 window.location.href = 'index.html';
             } else {
                 alert('Invalid credentials');

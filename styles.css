@@ -120,3 +120,43 @@ span#groups {
     font-size: 10px;
     padding: 2px;
 }
+
+.group-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.group-tile {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1 1 200px;
+}
+
+.group-tile:hover {
+    background-color: #f0f0f0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.username-column {
+    width: 10%;
+}
+.groups-column {
+    width: 90%;
+}
